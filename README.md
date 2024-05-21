@@ -3,11 +3,10 @@
 ![image](https://github.com/chuseok/teamProject/assets/56007762/8251d935-5cd2-44e4-99d7-d3e3fe3eaefd)
 </br>
 ![image](https://github.com/chuseok/teamProject/assets/56007762/689dcb14-1b73-44e6-9451-8c190eff3d56)
-
-> </br>
+</br>
 > start버튼을 누르면 지뢰게임이 시작되고 우클릭을 하면 지뢰를 심을 수 있습니다.</br>
 > 추후 좌클릭 Event를 통해 지뢰를 찾는 기능을 추가할 예정입니다.</br>
-> </br>
+</br>
 
 ## 협업 진행 방식
 각자 기능별로 담당해서 비순차적인 협업 방식으로 진행했습니다.
