@@ -1,6 +1,7 @@
 # 지뢰 심기
 
 ![image](https://github.com/chuseok/teamProject/assets/56007762/8251d935-5cd2-44e4-99d7-d3e3fe3eaefd)
+</br>
 ![image](https://github.com/chuseok/teamProject/assets/56007762/689dcb14-1b73-44e6-9451-8c190eff3d56)
 
 > start버튼을 누르면
