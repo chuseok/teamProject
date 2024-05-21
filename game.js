@@ -56,13 +56,59 @@ window.onload = function() {
                     flagged: false,
                     willClicked: false
                 }
+    
                 row.push(block)
+    
+                //-------------------------우클릭
+                blockDom.addEventListener('contextmenu', (e) => {
+                    e.preventDefault()
+                    if(block.clicked) return;
+                    if(block.flagged) {
+                        block.flagged = false
+                        blockDom.classList.remove('flagged')
+                        flag += 1
+                    } else {
+                        block.flagged = true
+                        blockDom.classList.add('flagged')
+                        flag -= 1
+                    }
+                    // flagRemain.innerHTML = flag // 남은 깃발 수 update
+                })
             }
             gameBoard.appendChild(rowDom)
     
             rows.push(row)
         }
+
+        //-----------------------지뢰배치
+        let n = 0
+        while(n < numMine) {
+            x = Math.floor(Math.random() * (width-1))
+            y = Math.floor(Math.random() * (height-1))
+            if(rows[y][x].isMine) continue
+            else {
+                rows[y][x].isMine = true
+                n += 1
+            }
+        }
     }
     initGame(width, height, numMine)
     
+    //클릭될 수 있는 block을 제외한 block array return
+    const getUnclickedNeighbors = (block) => {
+        const x = block.x
+        const y = block.y
+        const neighbors = []
+    
+        for(let i = Math.max(0, y); i <= Math.min(y+1, height.value-1); i++) {
+            for(let j = Math.max(0, x-1); j <= Math.min(x+1, width.value-1); j++) {
+                if(x===j && y===i) continue;
+                if(rows[i][j].clicked | rows[i][j].willClicked) continue;
+                else {
+                    neighbors.push(rows[i][j])
+                }
+            }
+        }
+        return neighbors
+    }
 }
