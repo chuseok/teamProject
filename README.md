@@ -1,6 +1,7 @@
 # 지뢰 심기
 
 ![image](https://github.com/chuseok/teamProject/assets/56007762/8251d935-5cd2-44e4-99d7-d3e3fe3eaefd)
+![image](https://github.com/chuseok/teamProject/assets/56007762/689dcb14-1b73-44e6-9451-8c190eff3d56)
 
 > start버튼을 누르면
 > 지뢰게임이 시작되고
@@ -16,7 +17,3 @@
 ## 배운점, 어려웠던 부분
 pull과 merge의 개념 및  local과 remote 환경에 대한 개념이 조금 헷갈렸다.
 어떤 식으로 협업을 진행해야 효율적으로 진행할 수 있는지 알게 됐다.
-
-- 프로젝트 소개
-- 협업 진행 방식
-- 프로젝트 진행 과정에서 배운점, 어려웠던 부분 기록
